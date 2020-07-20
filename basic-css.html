@@ -1,18 +1,56 @@
 <style>
 
-.body{
-  color: aqua;
+body {
+  background-color: lightblue;
+  background-image:url(hamilton.jpg)
 
 }
 
+h1 {
+  color: white;
+  text-align: center;
+  text-transform: capitalize;
+  border: 2cm;
+padding: 5ex;
+}
 
+p {
+  font-family: verdana;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 200;
+  line-height: 0rem;
+letter-spacing: 0ex;
+list-style-type: circle;
+}
 
+image {
+  width: initial;
+height: initial;
+margin: initial;
+}
+\\Below is an example of a class selector.\\
+.class {
+  color: aqua;
+}
+\\Below is an example of a id selector.\\
+.id {
+  color: blueviolet;
+}
+\\Below is an example of a tag selector.\\
+.ul {
+  text-decoration-color: brown;
+}
 
+\\Below is an example of a descendant combinator.\\
 
+div p {
+  background-color: green;
+}
 
+\\Below is an example of a child combinator.\\
 
-
-
-
-
+div > p {
+  background-color: black;
+}
 </style>
