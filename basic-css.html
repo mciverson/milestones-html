@@ -1,289 +1,311 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-<meta charset="UTF-8"/>
-<title>Common CSS Properties</title>
+    <meta charset="UTF-8" />
+    <title>Common CSS Properties</title>
+    <style>
+        /**  You generally want to put css and references to css files within the head tag.  JavaScript goes a the end of the body tag**/
+
+        header h1 {
+            text-align: center;
+        }
+
+        body {
+            line-height: 2.5;
+            background-color: beige;
+        }
+
+        #color {
+            color: blueviolet;
+        }
+
+        #align-center {
+            text-align: center;
+            line-height: 1.0;
+        }
+
+        #align-right {
+            text-align: right;
+            line-height: 1.0;
+        }
+
+        #uppercase {
+            text-transform: uppercase;
+            line-height: 1.0;
+        }
+
+        #capitalize {
+            text-transform: capitalize;
+            line-height: 1.0;
+        }
+
+        #line {
+            line-height: 10;
+        }
+
+        #line2 {
+            line-height: 1.0;
+        }
+
+        #space {
+            letter-spacing: 6px;
+        }
+
+        #space2 {
+            letter-spacing: -2px;
+        }
+
+        #font {
+            font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+        }
+
+        #font-size {
+            font-size: xx-large;
+        }
+
+        #font-style {
+            font-style: inherit;
+        }
+
+        #font-weight {
+            font-weight: 500;
+        }
+
+        .image {
+            background-image: url('hamilton.jpg');
+            width: 350px;
+            height: 350px;
+        }
+
+        .style {
+            list-style: circle;
+            color: black;
+        }
+
+        #margin {
+            margin: 50px;
+            background-color: blanchedalmond;
+        }
+
+        #padding {
+            padding: 25px;
+            background-color: burlywood;
+        }
+
+        #border {
+            border: dotted;
+        }
+
+        em {
+            color: green;
+        }
+
+        ul>li>ul>li {
+            color: aqua;
+        }
+
+        ul>li {
+            color: deeppink;
+        }
+    </style>
 </head>
 
 <body>
-<header>
-<h1>Common CSS Properties</h1>
-<p>This page will talk about the common CSS properties that are used on websites.</p>
+    <header>
+        <h1>Common CSS Properties</h1>
+        <p>This page will talk about the common CSS properties that are used on websites.</p>
 
-</header>
+    </header>
 
-<section>
-<p>You can use the <i>style</i>tag to insert CSS properties in HTML</p>
-<h3>Below are some examples of how CSS properties are applied to HTML:</h3>
+    <section>
+        <p>You can use the <i>style</i>tag to insert CSS properties in HTML</p>
+        <h3>Below are some examples of how CSS properties are applied to HTML:</h3>
 
-<ul>
-<li>color
-<ul>
-<li id="color">This line will change colors</li>
-</ul>
-</li>
+        <ul>
+            <li>color
+                <ul>
+                    <li id="color">This line will change colors</li>
+                </ul>
+            </li>
 
-<li>text-align
-<ul>
-<li>align text to the left</li>
-<p id="align-center">text should be in the center</p>
-<p id="align-right">and all the way to the right</p>
-</ul>
-</li>
+            <li>text-align
+                <ul>
+                    <li>align text to the left</li>
+                    <p id="align-center">text should be in the center</p>
+                    <p id="align-right">and all the way to the right</p>
+                </ul>
+            </li>
 
-<li>text-transform
-<ul>
-<li id="uppercase">all caps</li>
-<p id="lowercase">all lowercase</p>
-<p id="capitalize">this should have the first letter of each word capitalized</p>
-</ul>
-</li>
+            <li>text-transform
+                <ul>
+                    <li id="uppercase">all caps</li>
+                    <p id="lowercase">all lowercase</p>
+                    <p id="capitalize">this should have the first letter of each word capitalized</p>
+                </ul>
+            </li>
 
-<li>line-height
-<ul>
-<li id="line">increase the line height<br>
-between lines of text
-</li>
-<p id="line2">decrease the line height<br>
-between lines of text
-</p>
-</ul>
-</li>
+            <li>line-height
+                <ul>
+                    <li id="line">increase the line height<br>
+                        between lines of text
+                    </li>
+                    <p id="line2">decrease the line height<br>
+                        between lines of text
+                    </p>
+                </ul>
+            </li>
 
-<li>letter-spacing
-<ul>
-<li id="space">increase the spacing between letters</li>
-<p id="space2">decrease spacing between letters</p>
-</ul>
-</li>
+            <li>letter-spacing
+                <ul>
+                    <li id="space">increase the spacing between letters</li>
+                    <p id="space2">decrease spacing between letters</p>
+                </ul>
+            </li>
 
-<li>font-family
-<ul>
-<li id="font">change the text to a font of <em>my</em> choice!</li>
-</ul>
-</li>
+            <li>font-family
+                <ul>
+                    <li id="font">change the text to a font of <em>my</em> choice!</li>
+                </ul>
+            </li>
 
-<li>font-size
-<ul>
-<p id="font-size">change the font size</p>
-</ul>
-</li>
+            <li>font-size
+                <ul>
+                    <p id="font-size">change the font size</p>
+                </ul>
+            </li>
 
-<li>font-style
-<ul>
-<p id="font-style">change the style</p>
-</ul>
-</li>
+            <li>font-style
+                <ul>
+                    <p id="font-style">change the style</p>
+                </ul>
+            </li>
 
-<li>font-weight
-<ul>
-<p id="font-weight">change the weight</p>
-</ul>
-</li>
+            <li>font-weight
+                <ul>
+                    <p id="font-weight">change the weight</p>
+                </ul>
+            </li>
 
-<li>background-color
-<ul>
-<li>try changing the background color</li>
-</ul>
-</li>
+            <li>background-color
+                <ul>
+                    <li>try changing the background color</li>
+                </ul>
+            </li>
 
-<li>background-image
-<ul>
-<div class="image">
-<li>try inserting a background image
-</li>
-</div>
-</ul>
-</li>
+            <li>background-image
+                <ul>
+                    <div class="image">
+                        <li>try inserting a background image
+                        </li>
+                    </div>
+                </ul>
+            </li>
 
-<li>list-style-type
-<ul>
-<li class="style">try to add some style to the list bullets</li>
-<li class="style">did</li>
-<li class="style">you</li>
-<li class="style">see</li>
-<li class="style">a change?</li>
-</ul>
-</li>
+            <li>list-style-type
+                <ul>
+                    <li class="style">try to add some style to the list bullets</li>
+                    <li class="style">did</li>
+                    <li class="style">you</li>
+                    <li class="style">see</li>
+                    <li class="style">a change?</li>
+                </ul>
+            </li>
 
-<li>width and height
-<ul>
-<li>insert a random image and try to change the width and height properties</li>
-<p><img src="hamilton.jpg" width="100px" height="100px"/></p>
-</ul>
-</li>
+            <li>width and height
+                <ul>
+                    <li>insert a random image and try to change the width and height properties</li>
+                    <p><img src="hamilton.jpg" width="100px" height="100px" /></p>
+                </ul>
+            </li>
 
-<li>margin
-<ul>
-<li id="margin">try to add a margin to make it more clear</li>
-</ul>
-</li>
+            <li>margin
+                <ul>
+                    <li id="margin">try to add a margin to make it more clear</li>
+                </ul>
+            </li>
 
-<li>padding
-<ul>
-<li id="padding">try adding padding to make this more noticeable</i></li>
-</ul>
-</li>
+            <li>padding
+                <ul>
+                    <li id="padding">try adding padding to make this more noticeable</i></li>
+                </ul>
+            </li>
 
-<li>border
-<ul>
-<li id="border">try adding a border</li>
-</ul>
-</li>
-</section>
+            <li>border
+                <ul>
+                    <li id="border">try adding a border</li>
+                </ul>
+            </li>
+    </section>
 
-<section>
-<h3>Selectors</h3>
-<p>The different types of selectors are:</p>
-<ul>
-<li>type/tag selectors</li>
-<li>class selectors</li>
-<li>ID selectors</li>
-</ul>
+    <section>
+        <h3>Selectors</h3>
+        <p>The different types of selectors are:</p>
+        <ul>
+            <li>type/tag selectors</li>
+            <li>class selectors</li>
+            <li>ID selectors</li>
+        </ul>
 
-<h4>Type/Tag selectors</h4>
-<p>Type selectors are used to select certain HTML tags/elements.</p>
-<p>Below is an example of CSS being implemented on the <i>em</i> tag:</p>
-<img src="em2.PNG" alt="HTML"><br>
-<img src="em.PNG" alt="CSS">
+        <h4>Type/Tag selectors</h4>
+        <p>Type selectors are used to select certain HTML tags/elements.</p>
+        <p>Below is an example of CSS being implemented on the <i>em</i> tag:</p>
+        <img src="em2.PNG" alt="HTML"><br>  <!--  Avoid using the <br> tag, make space with CSS instead-->
+        <img src="em.PNG" alt="CSS">
 
-<h4>Class selectors</h4>
-<p>Class selectors are used to select multiple HTML elements on a page, and this can be done through receiving the same classname. </p>
-<p>Below is an example:</p>
-<img src="class.PNG" alt="HTML"><br>
-<img src="class2.PNG" alt="CSS">
+        <h4>Class selectors</h4>
+        <p>Class selectors are used to select multiple HTML elements on a page, and this can be done through receiving
+            the same classname. </p>
+        <p>Below is an example:</p>
+        <img src="class.PNG" alt="HTML"><br> <!--  Avoid using the <br> tag, make space with CSS instead-->
+        <img src="class2.PNG" alt="CSS">
 
-<h4>ID selectors</h4>
-<p>ID selectors are similar to class selectors, but they are very specific and can only be used once.</p>
-<p>Below is an example:</p>
-<img src="em2.PNG" alt="HTML">
-<img src="font.PNG" alt="CSS">
-</section>
+        <h4>ID selectors</h4>
+        <p>ID selectors are similar to class selectors, but they are very specific and can only be used once.</p>
+        <p>Below is an example:</p>
+        <img src="em2.PNG" alt="HTML">
+        <img src="font.PNG" alt="CSS">
+    </section>
 
-<section>
-<h3>Combinators</h3>
-<p>The different types of combinators are:</p>
-<ul>
-<li>descendant combinators</li>
-<li>child combinators</li>
-</ul>
+    <section>
+        <h3>Combinators</h3>
+        <p>The different types of combinators are:</p>
+        <ul>
+            <li>descendant combinators</li>
+            <li>child combinators</li>
+        </ul>
 
-<h4>Descendant combinators</h4>
-<p>Descendant combinator is an element nested anywhere in an element.</p>
-<p>Below is an example:</p>
-<img src="dcombinator.PNG" alt="HTML"><br>
-<img src="dcombinator2.PNG" alt="CSS">
+        <h4>Descendant combinators</h4>
+        <p>Descendant combinator is an element nested anywhere in an element.</p>
+        <p>Below is an example:</p>
+        <img src="dcombinator.PNG" alt="HTML"><br>
+        <img src="dcombinator2.PNG" alt="CSS">
 
 
-<h4>Child combinators</h4>
-<p>Child combinators are very similar to descendent combinators but the example below should give a clear visual on how they are different within the code. </p>
-<img src="ccombinator.PNG" alt="HTML"><br>
-<img src="ccombinator2.PNG" alt="CSS">
+        <h4>Child combinators</h4>
+        <p>Child combinators are very similar to descendent combinators but the example below should give a clear visual
+            on how they are different within the code. </p>
+        <img src="ccombinator.PNG" alt="HTML"><br>
+        <img src="ccombinator2.PNG" alt="CSS">
 
-</section>
+
+        <!--  Keep in mind when using ul and li tags to always close your li tag within your ul
+        Good:
+        <ul>
+            <li><span>Woot</span></li>
+            <li><div>Yay</div></li>
+        </ul>
+
+        Bad:  
+        <ul>
+            <div>Only do divs within an li tag, not directly under ul</div>
+            <li> Need a closing tag
+        </ul>
+        
+        
+        -->
+
+    </section>
 </body>
-<style>
 
-header h1 {
-text-align: center;
-}
-
-body {
-line-height: 2.5;
-background-color:beige;
-}
-
-#color {
-color:blueviolet;
-}
-
-#align-center {
-text-align: center;
-line-height: 1.0;
-}
-
-#align-right {
-text-align: right;
-line-height: 1.0;
-}
-
-#uppercase {
-text-transform: uppercase;
-line-height: 1.0;
-}
-
-#capitalize {
-text-transform: capitalize;
-line-height: 1.0;
-}
-
-#line {
-line-height: 10;
-}
-
-#line2 {
-line-height: 1.0;
-}
-
-#space {
-letter-spacing: 6px;
-}
-
-#space2 {
-letter-spacing: -2px;
-}
-
-#font {
-font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
-}
-
-#font-size {
-font-size:xx-large;
-}
-
-#font-style {
-font-style:inherit;
-}
-
-#font-weight {
-font-weight: 500;
-}
-
-.image {
-background-image: url('hamilton.jpg');
-width: 350px;
-height: 350px;
-}
-
-.style {
-list-style: circle;
-color: black;
-}
-
-#margin {
-margin: 50px;
-background-color:blanchedalmond;
-}
-
-#padding {
-padding: 25px;
-background-color:burlywood;
-}
-
-#border {
-border:dotted;
-}
-
-em {
-color: green;
-}
-
-ul > li > ul > li {
-color:aqua;
-}
-
-ul > li {
-color:deeppink;
-}
-</style>
 </html>
